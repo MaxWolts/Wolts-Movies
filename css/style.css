@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    display: flex;
+    background-color: #f7f6f7;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    width: 170px;
+}
+.header__searcher {
+    width: 40%;
+    outline: none;
+    height: 40px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0px 20px;
+}
+.header__menu {
+    align-self: left;
+}
+.header__menu--profile {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header__menu ul {
+    list-style: none;
+    display: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+    right: 0;
+    padding: 0 15px;
+}
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+.header__menu li:hover {
+    text-decoration: underline;
+}
+.header__menu ul a {
+    text-decoration: none;
+    color: black;
+}
+.header__menu--profile {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu--profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.main__menu-left {
+    padding-top: 20px;
+    grid-column: 1;
+    background-color: #ef4142;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 4fr 1fr 1fr;
+}
+.main__menu-left .button {
+    text-align: center;
+}
+.main__menu-left .button a{
+    color: #f7f6f7;
+    text-decoration: none;
+}
+.main__menu-left .button:hover p {
+    text-decoration: underline;
+}
+.main__menu-left .button p{
+    margin: 0;
+}
+.main__menu-left .button-setting {
+    grid-row: 5;
+}
+.main__movies {
+    padding-left: 31px;
+    padding-bottom: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 40px 1fr 40px 1fr;
+}
+h4 {
+    margin: auto 0;
+    font-size: 16px;
+}
+.movies-list-now,
+.movies-list-critic,
+.movies-list-not-lose{
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: repeat(3, 300px);
+}
+.main__movies .movie {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    cursor: pointer;
+}
+.main__movies .movie img{
+    width: 334px;
+}
+.main__movies .movie p {
+    display: none;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 8px 10px;
+    background-color: #a52a2aad;
+}
+.main__movies .movie p strong {
+    font-size: 17px;
+}
+.main__movies .movie:hover p {
+    display: block;
+}

@@ -1,0 +1,86 @@
+@media screen and (max-width: 1024px) {
+    .movies-list-now, 
+    .movies-list-critic, 
+    .movies-list-not-lose {
+        grid-gap: 3%;
+        grid-template-columns: repeat(3, 269px);
+    }
+}
+@media screen and (max-width:768px) {
+    main {
+        grid-template-columns: 15% 85%;
+    }
+    .main_movies {
+        padding-left: 0;
+    }
+    .movies-list-now,
+    .movies-list-critic,
+    .movies-list-not-lose{
+        justify-content: left;
+        grid-gap: 1%;
+        grid-template-columns: repeat(auto-fill, 269px);
+    }
+    .main__menu-left {
+        display: block;
+    }
+    .main__menu-left .button{
+        margin: 15px 0;
+    }
+}
+@media screen and (max-width:480px) {
+    main {
+        grid-template-columns: 20% 80%;
+    }
+    .movies-list-now,
+    .movies-list-critic,
+    .movies-list-not-lose{
+        grid-gap: 9px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .header__searcher {
+        grid-row: 2;
+        grid-column: span 2;
+        width: 75%;
+        justify-self: center;
+    }
+}
+@media screen and (max-width: 320px) {
+    header {
+        grid-gap: 19px 0;
+    }
+    .header__menu--profile p {
+        display: none;
+    }
+    .header__menu--profile {
+        width: 128px;
+        justify-content: flex-end;
+    }
+    main {
+        display: grid;
+        grid-template-rows: 66px 96%;
+        grid-template-columns: 1fr;
+    }
+    .main__menu-left .button {
+        margin: auto;
+    }
+    .main__menu-left {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .main__menu-left .button-setting {
+        grid-row: auto;
+    }
+    .main__movies {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+}
