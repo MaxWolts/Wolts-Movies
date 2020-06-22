@@ -9,6 +9,7 @@ header {
     background-color: #f7f6f7;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 1px 2.9px
 }
 .header__logo {
     width: 170px;
@@ -32,6 +33,7 @@ header {
     cursor: pointer;
 }
 .header__menu ul {
+    margin-top: 8px;
     list-style: none;
     display: none;
     padding: 0px;
@@ -113,6 +115,8 @@ h4 {
     overflow: hidden;
     height: 200px;
     cursor: pointer;
+    border-radius: 8px;
+    border: 3px solid #299e9c;
 }
 .main__movies .movie img{
     width: 334px;
@@ -133,3 +137,4 @@ h4 {
 .main__movies .movie:hover p {
     display: block;
 }
+.
