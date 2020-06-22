@@ -33,7 +33,6 @@ header {
     cursor: pointer;
 }
 .header__menu ul {
-    margin-top: 8px;
     list-style: none;
     display: none;
     padding: 0px;
@@ -42,7 +41,7 @@ header {
     text-align: right;
     margin: 0px 0px 0px -14px;
     right: 0;
-    padding: 0 15px;
+    padding: 5px 15px;
 }
 .header__menu:hover ul, ul:hover {
     display: block;
